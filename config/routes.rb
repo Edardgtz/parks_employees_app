@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   namespace :api do
     get "/employees" => "employees#index"
     get "/employees/:id" => "employees#show"
-     
+    post "/employees" => "employees#create" 
   end
 end
